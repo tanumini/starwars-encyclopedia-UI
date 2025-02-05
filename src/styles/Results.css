@@ -1,0 +1,76 @@
+/* Results.css */
+
+/* Container for the results */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #e6e6fa, #dcd0ff); /* Soft lilac gradient */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title styling - Highlighted for results */
+.container h2 {
+  color: #4b0082; /* Dark lilac */
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c1adfc; /* Slightly stronger lilac underline */
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.table {
+  background-color: #ffffff !important; /* White background */
+  color: #4b4b4b !important; /* Dark grey text */
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #c1adfc;
+}
+
+/* Table header styling */
+.table th {
+  background-color: #b09fff !important; /* Light lilac background */
+  color: #333 !important; /* Darker text */
+  font-size: 1.1rem;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+/* Table body styling */
+.table td {
+  background-color: #dcd0ff !important; /* Softer lilac background */
+  color: #4b0082 !important; /* Dark lilac text */
+  padding: 12px;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+  background-color: #e0d7ff !important; /* Slightly darker lilac */
+  transition: background 0.2s ease-in-out;
+}
+
+/* Container for the film links */
+/* Container for the film links */
+.film-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Slight gap between links */
+}
+
+/* Each individual film link will take up 30% width of the container, creating three per row */
+.film-links a {
+  width: 30%; /* Adjust width to fit three items per row */
+  color: #4b0082; /* Dark lilac color */
+  text-decoration: underline; /* Underlined for clarity */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.film-links a:hover {
+  color: #6a0dad; /* Slightly brighter purple on hover */
+  text-decoration: none; /* Remove underline on hover */
+}

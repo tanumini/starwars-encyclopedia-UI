@@ -1,0 +1,84 @@
+/* SearchForm.css */
+
+/* Overall container for the form */
+.search-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6e6fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .search-container .form-control {
+    background-color: #ffffff;
+  }
+  
+  /* Title styling */
+  .search-title {
+    color: #6a0dad; /* Dark lilac color */
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form */
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Form group for each input field */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Label styling */
+  label {
+    color: #6a0dad; /* Dark lilac color */
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Input fields */
+  .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #d6aad6; /* Light lilac border */
+    background-color: #ffffff; /* White background */
+    color: #6a0dad; /* Dark lilac text */
+  }
+  
+  /* Input fields on focus */
+  .form-control:focus {
+    border-color: #8e55b8; /* Slightly darker lilac on focus */
+    outline: none;
+  }
+  
+  /* Search button styling */
+  .search-btn {
+    background-color: #8e55b8; /* Lilac background */
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    font-size: 0.875rem; /* Smaller font size */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%;
+    align-content: center;
+  }
+  
+  .search-btn:hover {
+    background-color: #6a0dad; /* Darker lilac on hover */
+  }
+  
+  /* Error message styling */
+  .alert {
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
