@@ -1,17 +1,16 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import '../styles/Results.css';  // Import the CSS file
+import '../styles/Results.css';  
 
 const Results = ({ results }) => {
   if (!results) return <div>No results found.</div>;
 
-  // Ensure films are correctly extracted
   let filmsArray = [];
   if (results.films) {
     filmsArray = results.films
-      .replace(/[\[\]"]/g, '') // Remove square brackets and quotes
+      .replace(/[\[\]"]/g, '') 
       .split(',')
-      .map(url => url.trim()); // Trim spaces
+      .map(url => url.trim()); 
   }
 
   return (

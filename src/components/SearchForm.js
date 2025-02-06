@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Results from './Results';
 import { Button, Alert } from 'react-bootstrap';
-import '../styles/SearchForm.css'; // Import the custom CSS file
+import '../styles/SearchForm.css'; 
 
 const SearchForm = () => {
   const [type, setType] = useState('');
@@ -30,8 +30,8 @@ const SearchForm = () => {
       setName('');
     } catch (error) {
       setError(error.message);
-      setType(''); // Clear type field on error
-      setName(''); // Clear name field on error
+      setType('');
+      setName(''); 
     }
   };
 
@@ -43,7 +43,7 @@ const SearchForm = () => {
   return (
     <div className="search-container">
       <h2 className="search-title">Star Wars Encyclopedia</h2>
-      <form onSubmit={handleSubmit} className="search-form">
+      <form onSubmit={handleSubmit} className="search-form" data-testid="search-form">
         <div className="form-group">
           <label htmlFor="type">Type</label>
           <select
